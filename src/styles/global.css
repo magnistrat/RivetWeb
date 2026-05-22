@@ -1,0 +1,52 @@
+@import "tailwind.css";
+@import "tailwindplus/elements";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f7f4;
+    color: #334155;
+}
+.nav-link {
+    @apply px-4 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-orange-100 hover:text-orange-600 transition-colors;
+}
+.nav-link.active {
+    @apply bg-orange-500 text-white hover:bg-orange-600 hover:text-white;
+}
+.page-section {
+    display: none;
+}
+.page-section.active {
+    display: block;
+}
+.cta-button {
+    @apply inline-block bg-orange-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-orange-600 transition-transform hover:scale-105;
+}
+.graphic-icon {
+    @apply text-8xl md:text-9xl text-orange-500 opacity-20;
+}
+.service-card {
+    @apply bg-white p-6 rounded-lg shadow-lg transform hover:shadow-xl hover:-translate-y-1 transition-all;
+}
+.resource-card {
+    @apply bg-white p-6 rounded-lg shadow-lg transform hover:shadow-xl hover:scale-105 transition-all;
+}
+/* Custom Brand Colors from Brand Sheet */
+:root {
+    --rivet-navy: #0A2342;
+    --steel-blue: #2F5C8A;
+    --rivet-orange: #F2952F;
+    --bright-copper: #C76B29;
+}
+.text-rivet-navy { color: var(--rivet-navy); }
+.text-steel-blue { color: var(--steel-blue); }
+.text-rivet-orange { color: var(--rivet-orange); }
+.text-bright-copper { color: var(--bright-copper); }
+
+.bg-rivet-navy { background-color: var(--rivet-navy); }
+.bg-steel-blue { background-color: var(--steel-blue); }
+.bg-rivet-orange { background-color: var(--rivet-orange); }
+.bg-bright-copper { background-color: var(--bright-copper); }
+
+.border-rivet-orange { border-color: var(--rivet-orange); }
+.border-steel-blue { border-color: var(--steel-blue); }
+
